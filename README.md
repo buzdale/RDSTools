@@ -1,7 +1,13 @@
-Uses AWS API to get info about database instances.
+####describeRDS.go
+
+
+###Uses AWS API to get info about database instances.
 export AWS_REGION= whatever your region is
 
 USAGE: describeRDS -d <dbInstance>
+        describes Database Instance - If blank describes all in the Region.
        describeRDS -l 
         lists databaseInstances in region
-If you leave it blank you will get all of them.# RDSTools
+       describeRDS -f <dbInstance>
+        Shows free storage in GBytes for dbInstance.  If left blank will fail.
+         
