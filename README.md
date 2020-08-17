@@ -1,7 +1,7 @@
-####describeRDS.go
+#### describeRDS.go
 
 
-###Uses AWS API to get info about database instances.
+### Uses AWS API to get info about database instances.
 export AWS_REGION= whatever your region is
 
 USAGE: describeRDS -d <dbInstance>
