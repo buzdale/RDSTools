@@ -42,7 +42,7 @@ func main() {
 }
 
 func getFreeStorage(instance string) *cloudwatch.GetMetricStatisticsOutput {
-	// statistics needs to be a slice of string - We only need on entry.
+	// statistics needs to be a slice of string - We only need one entry though.
 	statistics := make([]string, 1)
 	statistics[0] = "Average"
 	svc := cloudwatch.New(session.New())
@@ -104,8 +104,6 @@ func describeDB(instance string) *rds.DescribeDBInstancesOutput {
 
 	}
 	return result
-	//fmt.Println(result)
-
 }
 
 //  Grabs results from describeDB and returns databases.
@@ -113,6 +111,7 @@ func listDBs() []string {
 	result := describeDB("")
 	var list []string
 	for _, n := range result.DBInstances {
+		// Aurora databases don't give FreeStorage which breaks looking for that metric.
 		if *n.Engine != "aurora" {
 			list = append(list, *n.DBInstanceIdentifier)
 		}
