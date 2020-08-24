@@ -111,8 +111,8 @@ func listDBs() []string {
 	result := describeDB("")
 	var list []string
 	for _, n := range result.DBInstances {
-		// Aurora databases don't give FreeStorage which breaks looking for that metric.
-		if *n.Engine != "aurora" {
+		// Aurora databases don't give FreeStorage  neither do stopped databases - which breaks looking for that metric.
+		if *n.Engine != "aurora" && *n.DBInstanceStatus != "stopped" {
 			list = append(list, *n.DBInstanceIdentifier)
 		}
 	}
