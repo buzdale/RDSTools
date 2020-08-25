@@ -26,12 +26,12 @@ func main() {
 	}
 	// Print the list of DBs Maybe these should be case statements.
 	if *listflag == true {
-		listOfDBs := listDBs()
+		listOfDBs := listDBs(true)
 		for _, n := range listOfDBs {
 			fmt.Println(n)
 		}
 	} else if *freeflag {
-		listforStorage := listDBs()
+		listforStorage := listDBs(false)
 		for _, n := range listforStorage {
 			gbytesStorage := *getFreeStorage(n).Datapoints[0].Average / 1024 / 1024 / 1024
 			fmt.Println(" Free storage for database ", n, " is ", gbytesStorage, " GBytes")
@@ -107,13 +107,17 @@ func describeDB(instance string) *rds.DescribeDBInstancesOutput {
 }
 
 //  Grabs results from describeDB and returns databases.
-func listDBs() []string {
+func listDBs(listFlag bool) []string {
 	result := describeDB("")
 	var list []string
 	for _, n := range result.DBInstances {
-		// Aurora databases don't give FreeStorage  neither do stopped databases - which breaks looking for that metric.
-		if *n.Engine != "aurora" && *n.DBInstanceStatus != "stopped" {
+		if listFlag == true {
 			list = append(list, *n.DBInstanceIdentifier)
+		} else {
+			// // Aurora databases don't give FreeStorage  neither do stopped databases - which breaks looking for that metric.
+			if *n.Engine != "aurora" && *n.DBInstanceStatus != "stopped" {
+				list = append(list, *n.DBInstanceIdentifier)
+			}
 		}
 	}
 	return list
