@@ -6,11 +6,14 @@ export AWS_REGION= whatever your region is
 
 USAGE: 
 
+        describeRDS -c	
+        Calculates average CPU usage last 5 minutes
+
         describeRDS -d <dbInstance>
-        describes Database Instance - If blank describes all in the Region.
+        Describes Database Instance - If blank describes all in the Region.
         
        describeRDS -l 
-        lists databaseInstances in region
+        Lists databaseInstances in region
         
        describeRDS -f
         Shows free storage in GBytes for all non-aurora dbInstances.
