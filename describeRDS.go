@@ -89,7 +89,7 @@ func getFreeStorage(instance string) *cloudwatch.GetMetricStatisticsOutput {
 
 }
 
-// Gets teh average CPU utilization from metrics for the last 5 minutes
+// Gets thh average CPU utilization from metrics for the last 5 minutes
 func getCPUUtilization(instance string) *cloudwatch.GetMetricStatisticsOutput {
 	// statistics needs to be a slice of string - We only need one entry though.
 	statistics := make([]string, 1)
@@ -161,7 +161,10 @@ func listDBs(listFlag bool) []string {
 	var list []string
 	for _, n := range result.DBInstances {
 		if listFlag == true {
-			list = append(list, *n.DBInstanceIdentifier)
+			temp1 := *n.DBInstanceIdentifier
+			temp2 := *n.DBInstanceClass
+			temp := temp1 + " " + temp2
+			list = append(list, temp) //*n.DBInstanceIdentifier)
 		} else {
 			// // Aurora databases don't give FreeStorage  neither do stopped databases - which breaks looking for that metric.
 			if *n.Engine != "aurora" && *n.DBInstanceStatus != "stopped" {
