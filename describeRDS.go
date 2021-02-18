@@ -5,6 +5,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"strconv"
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -35,13 +36,16 @@ func main() {
 		listforStorage := listDBs(false)
 		for _, n := range listforStorage {
 			gbytesStorage := *getFreeStorage(n).Datapoints[0].Average / 1024 / 1024 / 1024
-			fmt.Println(" Free storage for database ", n, " is ", gbytesStorage, " GBytes")
+			gbytesAllocatedStorage := getAllocatedStorage(n)
+			fmt.Printf("Free storage for database %s:\t\t%4.2fGB of %s GB \n", n, gbytesStorage, gbytesAllocatedStorage)
 		}
 	} else if *cpuflag {
 		cpuAverage := listDBs(true)
 		for _, n := range cpuAverage {
-			cpuPercentage := *getCPUUtilization(n).Datapoints[0].Average
-			fmt.Printf(" CPU utilization for database %s is %.2f %% \n", n, cpuPercentage)
+			cpuPercentage := getCPUUtilization(n)
+			fmt.Println(cpuPercentage)
+			// cpustring := cpuPercentage.GoString()
+			// fmt.Printf(" CPU utilization for database %s is %s %% \n", n, cpustring)
 		}
 
 	} else {
@@ -89,27 +93,14 @@ func getFreeStorage(instance string) *cloudwatch.GetMetricStatisticsOutput {
 
 }
 
-// Gets thh average CPU utilization from metrics for the last 5 minutes
-func getCPUUtilization(instance string) *cloudwatch.GetMetricStatisticsOutput {
-	// statistics needs to be a slice of string - We only need one entry though.
-	statistics := make([]string, 1)
-	statistics[0] = "Average"
-	svc := cloudwatch.New(session.New())
-	result, err := svc.GetMetricStatistics(&cloudwatch.GetMetricStatisticsInput{
-		MetricName: aws.String("CPUUtilization"),
-		Namespace:  aws.String("AWS/RDS"),
-		Dimensions: []*cloudwatch.Dimension{
-			{
-				Name:  aws.String("DBInstanceIdentifier"),
-				Value: aws.String(instance),
-			},
-		},
-		EndTime:    aws.Time(time.Now()),
-		StartTime:  aws.Time(time.Now().Add(time.Minute * -10)),
-		Period:     aws.Int64(300),
-		Statistics: aws.StringSlice(statistics),
-	},
-	)
+// Gets the allocated storage for the database instance.
+func getAllocatedStorage(instance string) string {
+	svc := rds.New(session.New())
+	input := &rds.DescribeDBInstancesInput{
+		DBInstanceIdentifier: aws.String(instance),
+	}
+
+	result, err := svc.DescribeDBInstances(input)
 	if err != nil {
 		if aerr, ok := err.(awserr.Error); ok {
 			switch aerr.Code() {
@@ -121,12 +112,15 @@ func getCPUUtilization(instance string) *cloudwatch.GetMetricStatisticsOutput {
 		} else {
 			// Print the error, cast err to awserr.Error to get the Code and
 			// Message from an error.
-			fmt.Println("Error", err.Error())
+			fmt.Println(err.Error())
 		}
+
 	}
 
-	return result
+	n := result.DBInstances[0]
+	AllocatedStorage := *n.AllocatedStorage
 
+	return strconv.FormatInt(AllocatedStorage, 10)
 }
 
 // Describes one or all databases in Json format
