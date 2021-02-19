@@ -41,10 +41,10 @@ func main() {
 			fmt.Printf("Free storage for database %s:\t\t%4.2fGB of %s GB \n", n, gbytesStorage, gbytesAllocatedStorage)
 		}
 	} else if *cpuflag {
-		cpuAverage := listDBs(true)
+		cpuAverage := listDBs(false)
 		for _, n := range cpuAverage {
-			cpuPercentage := getcpu.Utilization(n)
-			fmt.Println(cpuPercentage)
+			_ = getcpu.Utilization(n)
+			// fmt.Println(cpuPercentage)
 			// cpustring := cpuPercentage.GoString()
 			// fmt.Printf(" CPU utilization for database %s is %s %% \n", n, cpustring)
 		}
