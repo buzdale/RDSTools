@@ -1,6 +1,5 @@
-// test to run with known instance
-
-package getCPUUtilization
+// Package getCPUUtilizationPKG takes a string and prints CPU Utilization - returns "Done"
+package getCPUUtilizationPKG
 
 import (
 	"fmt"
@@ -13,6 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/rds"
 )
 
+// func getCPUUtilization takes instance to get CPU Utilization and prints it then returns "Done"
 func getCPUUtilization(instance string) string {
 	// statistics needs to be a slice of string - We only need one entry though.
 	statistics := []string{

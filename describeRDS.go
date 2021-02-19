@@ -42,7 +42,7 @@ func main() {
 	} else if *cpuflag {
 		cpuAverage := listDBs(true)
 		for _, n := range cpuAverage {
-			cpuPercentage := getCPUUtilization(n)
+			cpuPercentage := getCPUUtilizationPKG.getCPUUtilization(n)
 			fmt.Println(cpuPercentage)
 			// cpustring := cpuPercentage.GoString()
 			// fmt.Printf(" CPU utilization for database %s is %s %% \n", n, cpustring)
