@@ -5,14 +5,15 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"strconv"
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
-	"github.com/aws/aws-sdk-go-v2/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/rds"
+	"github.com/buzdale/RDSTools/getCPU"
 )
 
 func main() {
@@ -42,7 +43,7 @@ func main() {
 	} else if *cpuflag {
 		cpuAverage := listDBs(true)
 		for _, n := range cpuAverage {
-			cpuPercentage := getCPUUtilizationPKG.getCPUUtilization(n)
+			cpuPercentage := getCPU.GetCPUUtilization(n)
 			fmt.Println(cpuPercentage)
 			// cpustring := cpuPercentage.GoString()
 			// fmt.Printf(" CPU utilization for database %s is %s %% \n", n, cpustring)
@@ -75,18 +76,7 @@ func getFreeStorage(instance string) *cloudwatch.GetMetricStatisticsOutput {
 	},
 	)
 	if err != nil {
-		if aerr, ok := err.(awserr.Error); ok {
-			switch aerr.Code() {
-			case rds.ErrCodeDBInstanceNotFoundFault:
-				fmt.Println(rds.ErrCodeDBInstanceNotFoundFault, aerr.Error())
-			default:
-				fmt.Println(aerr.Error())
-			}
-		} else {
-			// Print the error, cast err to awserr.Error to get the Code and
-			// Message from an error.
-			fmt.Println("Error", err.Error())
-		}
+		log.Fatalf("unable to load SDK config, %v", err)
 	}
 
 	return result
@@ -102,19 +92,7 @@ func getAllocatedStorage(instance string) string {
 
 	result, err := svc.DescribeDBInstances(input)
 	if err != nil {
-		if aerr, ok := err.(awserr.Error); ok {
-			switch aerr.Code() {
-			case rds.ErrCodeDBInstanceNotFoundFault:
-				fmt.Println(rds.ErrCodeDBInstanceNotFoundFault, aerr.Error())
-			default:
-				fmt.Println(aerr.Error())
-			}
-		} else {
-			// Print the error, cast err to awserr.Error to get the Code and
-			// Message from an error.
-			fmt.Println(err.Error())
-		}
-
+		log.Fatalf("unable to load SDK config, %v", err)
 	}
 
 	n := result.DBInstances[0]
@@ -132,19 +110,7 @@ func describeDB(instance string) *rds.DescribeDBInstancesOutput {
 
 	result, err := svc.DescribeDBInstances(input)
 	if err != nil {
-		if aerr, ok := err.(awserr.Error); ok {
-			switch aerr.Code() {
-			case rds.ErrCodeDBInstanceNotFoundFault:
-				fmt.Println(rds.ErrCodeDBInstanceNotFoundFault, aerr.Error())
-			default:
-				fmt.Println(aerr.Error())
-			}
-		} else {
-			// Print the error, cast err to awserr.Error to get the Code and
-			// Message from an error.
-			fmt.Println(err.Error())
-		}
-
+		log.Fatalf("unable to load SDK config, %v", err)
 	}
 	return result
 }

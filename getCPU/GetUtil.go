@@ -1,4 +1,4 @@
-// Package getCPUUtilizationPKG takes a string and prints CPU Utilization - returns "Done"
+// Package getCPU takes a string and prints CPU Utilization - returns "Done"
 package getCPU
 
 import (
