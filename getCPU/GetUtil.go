@@ -1,5 +1,5 @@
 // Package getCPUUtilizationPKG takes a string and prints CPU Utilization - returns "Done"
-package getCPUUtilizationPKG
+package getCPU
 
 import (
 	"fmt"
