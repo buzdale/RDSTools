@@ -1,0 +1,1040 @@
+{
+    "ReservedDBInstances": [
+        {
+            "ReservedDBInstanceId": "customer-dbs",
+            "ReservedDBInstancesOfferingId": "827135d9-6289-4277-b337-38a5eab4ec38",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2018-10-09T20:33:34.103000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 648.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 19,
+            "ProductDescription": "mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.132,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:customer-dbs",
+            "LeaseId": "9d970f81-394a-46b6-aea8-44d60f98ab06"
+        },
+        {
+            "ReservedDBInstanceId": "fbg0000",
+            "ReservedDBInstancesOfferingId": "44f6259a-4d19-46a1-a016-c7afe51cec6e",
+            "DBInstanceClass": "db.m4.large",
+            "StartTime": "2018-10-09T20:27:16.089000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 648.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.132,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:fbg0000",
+            "LeaseId": "6e067b6a-b691-4fc9-88e3-3e6c5262f398"
+        },
+        {
+            "ReservedDBInstanceId": "ignite",
+            "ReservedDBInstancesOfferingId": "ff75c5f7-d43d-4db0-97de-5aebbb84dc4e",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-01-04T21:19:49.990000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 1828.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.209,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ignite",
+            "LeaseId": "1a933a7f-3115-43f0-8917-5eca69da2891"
+        },
+        {
+            "ReservedDBInstanceId": "ignite-hosts",
+            "ReservedDBInstancesOfferingId": "0abf93c7-e396-4a8b-86c8-e08d77a15166",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2018-10-09T20:31:28.766000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 1296.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 4,
+            "ProductDescription": "mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.263,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ignite-hosts",
+            "LeaseId": "678e4354-857c-4086-ad9e-21b1120a3218"
+        },
+        {
+            "ReservedDBInstanceId": "ignite-master",
+            "ReservedDBInstancesOfferingId": "7266de6f-3ecf-492a-8745-1990869f7182",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2017-11-15T18:56:02.459000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.481,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ignite-master",
+            "LeaseId": "cd7c78fa-1047-435c-b225-d69eb74728bd"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m3-medium-noupfront-20191009-slapp-production",
+            "ReservedDBInstancesOfferingId": "abe60c00-ee25-474a-872c-4a28a38d7674",
+            "DBInstanceClass": "db.m3.medium",
+            "StartTime": "2019-10-09T18:31:44.038000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.13,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m3-medium-noupfront-20191009-slapp-production",
+            "LeaseId": "0af13bf3-f065-4eba-8b24-42def4c25d2e"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-large-noupfront-20191009-fbg00",
+            "ReservedDBInstancesOfferingId": "445ac029-1876-47e2-9145-24d38fedafa5",
+            "DBInstanceClass": "db.m5.large",
+            "StartTime": "2019-10-09T20:37:24.271000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-large-noupfront-20191009-fbg00",
+            "LeaseId": "a476f3cf-a0f1-4866-9ae6-0fd78f2ea2d0"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-xlarge-noupfront-20191009-ignite01",
+            "ReservedDBInstancesOfferingId": "3c48583b-e6b2-4aa9-93e6-a23f225be5a2",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:52:05.389000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.438,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-xlarge-noupfront-20191009-ignite01",
+            "LeaseId": "5dd09eaf-49de-4340-9222-c1735fc5cb25"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-xlarge-noupfront-20191009-ignite02",
+            "ReservedDBInstancesOfferingId": "3c48583b-e6b2-4aa9-93e6-a23f225be5a2",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:52:05.269000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.438,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-xlarge-noupfront-20191009-ignite02",
+            "LeaseId": "9889cea8-1a1f-40a1-b1cc-24e0b2e6e02a"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-xlarge-noupfront-20191009-ignite03",
+            "ReservedDBInstancesOfferingId": "3c48583b-e6b2-4aa9-93e6-a23f225be5a2",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:52:05.612000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.438,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-xlarge-noupfront-20191009-ignite03",
+            "LeaseId": "b3e49bb1-cab6-4eb8-acd4-6c9706962dd5"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-xlarge-noupfront-20191009-ignite04",
+            "ReservedDBInstancesOfferingId": "3c48583b-e6b2-4aa9-93e6-a23f225be5a2",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:52:05.678000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.438,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-xlarge-noupfront-20191009-ignite04",
+            "LeaseId": "8cd3f561-1577-4246-992e-b57af36b5d76"
+        },
+        {
+            "ReservedDBInstanceId": "multi-az-mysql-m5-xlarge-noupfront-20191009-slapi00",
+            "ReservedDBInstancesOfferingId": "3c48583b-e6b2-4aa9-93e6-a23f225be5a2",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-10T03:26:01.588000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": true,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.438,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:multi-az-mysql-m5-xlarge-noupfront-20191009-slapi00",
+            "LeaseId": "922592a1-ab56-45c0-905a-7d9eb448ad75"
+        },
+        {
+            "ReservedDBInstanceId": "ri-2015-11-06-16-40-05-089",
+            "ReservedDBInstancesOfferingId": "ec07a4d4-aebb-4c8d-a13c-99f6346c9464",
+            "DBInstanceClass": "db.m3.medium",
+            "StartTime": "2015-11-06T16:40:13.863000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 951.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 8,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ri-2015-11-06-16-40-05-089",
+            "LeaseId": "8f209f8c-a85a-45cd-b1b3-d5e158ee11c0"
+        },
+        {
+            "ReservedDBInstanceId": "ri-2016-10-03-15-07-27-796",
+            "ReservedDBInstancesOfferingId": "fdb21098-ecf5-4dcf-a97b-a24f4ebdb965",
+            "DBInstanceClass": "db.m4.large",
+            "StartTime": "2016-10-03T15:07:40.546000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 1766.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 8,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ri-2016-10-03-15-07-27-796",
+            "LeaseId": "c0416572-ccf8-47e2-9751-67a8e08d762b"
+        },
+        {
+            "ReservedDBInstanceId": "ri-2016-12-30-17-50-00-688",
+            "ReservedDBInstancesOfferingId": "ec7af862-7ccb-44ad-b695-9dbe69f985f1",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2016-12-30T17:50:50.623000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 3531.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 2,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:ri-2016-12-30-17-50-00-688",
+            "LeaseId": "164cf4c5-c69c-43b4-b443-0e5c286d17eb"
+        },
+        {
+            "ReservedDBInstanceId": "scope",
+            "ReservedDBInstancesOfferingId": "2425c4f5-f906-4783-a519-115c1beb40ff",
+            "DBInstanceClass": "db.r4.4xlarge",
+            "StartTime": "2019-01-04T21:21:25.152000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 5000.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "aurora-mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.72,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:scope",
+            "LeaseId": "3207fe7a-5b1c-4020-aac1-83b666ab1993"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-20191009-fbg00",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T17:30:10.582000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-20191009-fbg00",
+            "LeaseId": "7908889e-40cd-4502-94e1-1db580fb6dac"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-fbg01",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T17:45:14.695000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-fbg01",
+            "LeaseId": "9c1f1ff7-989a-4a01-a6c0-1e75939ad5ea"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-fbg02",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T17:45:14.199000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-fbg02",
+            "LeaseId": "68c74d91-ea46-48b6-91af-61edd8b87d68"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-fbg03",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T17:45:42.291000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-fbg03",
+            "LeaseId": "fbe9735b-80ed-40ae-9e40-0771f65aee8f"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-fbg04",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T17:45:42.510000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-fbg04",
+            "LeaseId": "89b00e66-fa6a-4619-bd27-b58fda53556a"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi01",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T18:16:13.865000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi01",
+            "LeaseId": "6ebe09f8-6ba6-4ef4-8951-378e31caa73c"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi02",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T18:16:14.089000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi02",
+            "LeaseId": "b7d7f893-7782-4f0b-b366-d605fc2b80dd"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi03",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:39.357000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi03",
+            "LeaseId": "8aa57641-2cbe-4e31-b191-ad4fcee22863"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi04",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:38.758000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi04",
+            "LeaseId": "17449e76-d241-4f33-a8ea-00770a3d9f1f"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi05",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:39.025000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi05",
+            "LeaseId": "b148bf7e-7f5f-49f1-8924-5a9ec0dd79d3"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi06",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:39.523000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi06",
+            "LeaseId": "f351e7ac-ad48-40a0-879a-4f84b49a616b"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi07",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:39.119000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi07",
+            "LeaseId": "7ac3c84f-e335-4b9d-8a93-b34501132eab"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi08",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:39.281000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi08",
+            "LeaseId": "54aff540-622d-4482-84fe-36c2dd9cf70f"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi09",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:33:38.517000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi09",
+            "LeaseId": "f2785cae-dcc1-465b-a5ef-d3742dc9b4a1"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi10",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:01.826000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi10",
+            "LeaseId": "aff8b39f-2507-4dbc-9564-91a2d10b06ec"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi11",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.475000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi11",
+            "LeaseId": "5ae824bc-ff45-46c5-8abd-e4a3f80dd218"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi12",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.098000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi12",
+            "LeaseId": "90b49b11-6994-4748-8e01-5eeed64462f7"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi13",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.458000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi13",
+            "LeaseId": "0a8fb24b-a47a-49e2-9ab9-83a206ce4c26"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi14",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.774000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi14",
+            "LeaseId": "ed8301ce-bc6a-4a27-9883-2d6992129bec"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi15",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.810000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi15",
+            "LeaseId": "70f41c4a-4dfc-42b8-b4ce-57311252ecad"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi16",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:01.485000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi16",
+            "LeaseId": "4badadb4-309f-4886-a84c-f13a65f4c0c4"
+        },
+        {
+            "ReservedDBInstanceId": "single-az-mysql-m5-xlarge-noupfront-20191009-slapi17",
+            "ReservedDBInstancesOfferingId": "e0db87cb-c8b3-439a-b82c-b8591e4e4d8a",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-10-09T20:36:02.160000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "active",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.219,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:single-az-mysql-m5-xlarge-noupfront-20191009-slapi17",
+            "LeaseId": "1ddb7d35-2132-4b1e-988f-25976826a334"
+        },
+        {
+            "ReservedDBInstanceId": "slapi",
+            "ReservedDBInstancesOfferingId": "dd163ee7-7dc5-4720-ab13-ecc69961b076",
+            "DBInstanceClass": "db.m5.xlarge",
+            "StartTime": "2019-01-04T21:18:48.296000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 914.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 2,
+            "ProductDescription": "mysql",
+            "OfferingType": "Partial Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.104,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:slapi",
+            "LeaseId": "56859b8c-e9e9-405f-a5a9-ae5fca7dfe52"
+        },
+        {
+            "ReservedDBInstanceId": "slapi-us-west-transition",
+            "ReservedDBInstancesOfferingId": "4a1afe12-92c0-4890-86a7-f9deff04861d",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2017-06-14T13:59:35.350000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 0.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 22,
+            "ProductDescription": "mysql",
+            "OfferingType": "No Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.241,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:slapi-us-west-transition",
+            "LeaseId": "4babc741-b4d1-4102-a9c8-81a664fcb0f6"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-ignite00",
+            "ReservedDBInstancesOfferingId": "ec7af862-7ccb-44ad-b695-9dbe69f985f1",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2017-12-28T08:13:23.267000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 3531.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-ignite00",
+            "LeaseId": "d5f66efe-28c8-4fdb-99d6-7e7cb8eddb8e"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-ignite-slapi",
+            "ReservedDBInstancesOfferingId": "b351434b-2c3f-49c5-979d-390324b140f2",
+            "DBInstanceClass": "db.m4.xlarge",
+            "StartTime": "2017-12-28T08:11:07.178000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 1766.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 2,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-ignite-slapi",
+            "LeaseId": "d2a80893-a5c8-4ff1-9bb7-2dfb2707a17c"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-quantify",
+            "ReservedDBInstancesOfferingId": "812bf77c-6db1-48e3-8c90-a5d957e914dd",
+            "DBInstanceClass": "db.m4.large",
+            "StartTime": "2017-12-28T22:02:22.355000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 883.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-quantify",
+            "LeaseId": "bed84ea3-a208-46b6-8910-81e5d856e6a4"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-scope",
+            "ReservedDBInstancesOfferingId": "3ab421d6-a1d8-41f6-93a6-2102fd84d389",
+            "DBInstanceClass": "db.r4.2xlarge",
+            "StartTime": "2017-12-28T21:53:36.790000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 5541.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "aurora-mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.0,
+                    "RecurringChargeFrequency": "Hourly"
+                }
+            ],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-scope",
+            "LeaseId": "70013087-a22a-42ce-8400-c44dfc5e2307"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-scope-and-keywords",
+            "ReservedDBInstancesOfferingId": "c234da18-500b-4aa8-a034-25702c01324e",
+            "DBInstanceClass": "db.t2.small",
+            "StartTime": "2017-12-28T22:30:17.137000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 238.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 2,
+            "ProductDescription": "aurora-mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-scope-and-keywords",
+            "LeaseId": "41bf1769-dce5-4d1e-84ed-bec1e257ad9c"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-slapp",
+            "ReservedDBInstancesOfferingId": "ec07a4d4-aebb-4c8d-a13c-99f6346c9464",
+            "DBInstanceClass": "db.m3.medium",
+            "StartTime": "2017-12-28T22:04:58.503000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 951.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 1,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": true,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-slapp",
+            "LeaseId": "7a495b1a-0cdd-4daf-836c-4a5ef5c7a8fd"
+        },
+        {
+            "ReservedDBInstanceId": "yearend-slappstaging-and-general-dev",
+            "ReservedDBInstancesOfferingId": "d9dade3b-2aff-40c6-aa56-9c0b5049ba89",
+            "DBInstanceClass": "db.t2.small",
+            "StartTime": "2017-12-28T22:22:11.575000+00:00",
+            "Duration": 31536000,
+            "FixedPrice": 195.0,
+            "UsagePrice": 0.0,
+            "CurrencyCode": "USD",
+            "DBInstanceCount": 2,
+            "ProductDescription": "mysql",
+            "OfferingType": "All Upfront",
+            "MultiAZ": false,
+            "State": "retired",
+            "RecurringCharges": [],
+            "ReservedDBInstanceArn": "arn:aws:rds:us-east-1:017109116516:ri:yearend-slappstaging-and-general-dev",
+            "LeaseId": "2a375168-1217-4d8b-8405-127e2087d02a"
+        }
+    ]
+}
