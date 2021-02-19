@@ -1,5 +1,5 @@
-// Package getCPU takes a string and prints CPU Utilization - returns "Done"
-package getCPU
+// Package getcpu takes a string and prints CPU Utilization - returns "Done"
+package getcpu
 
 import (
 	"fmt"
@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 )
 
-// func getCPUUtilization takes instance to get CPU Utilization and prints it then returns "Done"
-func GetCPUUtilization(instance string) string {
+// Utilization takes instance to get CPU Utilization and prints it then returns "Done"
+func Utilization(instance string) string {
 	// statistics needs to be a slice of string - We only need one entry though.
 	statistics := []string{
 		"Average",
