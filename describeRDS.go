@@ -13,7 +13,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/rds"
-	"github.com/buzdale/RDSTools/getCPU"
+	getcpu "github.com/buzdale/RDSTools/getCPU"
 )
 
 func main() {
@@ -43,7 +43,7 @@ func main() {
 	} else if *cpuflag {
 		cpuAverage := listDBs(true)
 		for _, n := range cpuAverage {
-			cpuPercentage := getCPU.GetCPUUtilization(n)
+			cpuPercentage := getcpu.Utilization(n)
 			fmt.Println(cpuPercentage)
 			// cpustring := cpuPercentage.GoString()
 			// fmt.Printf(" CPU utilization for database %s is %s %% \n", n, cpustring)
