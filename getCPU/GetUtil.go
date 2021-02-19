@@ -12,7 +12,7 @@ import (
 )
 
 // func getCPUUtilization takes instance to get CPU Utilization and prints it then returns "Done"
-func getCPUUtilization(instance string) string {
+func GetCPUUtilization(instance string) string {
 	// statistics needs to be a slice of string - We only need one entry though.
 	statistics := []string{
 		"Average",
