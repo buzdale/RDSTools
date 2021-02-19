@@ -3,13 +3,12 @@ package getCPUUtilizationPKG
 
 import (
 	"fmt"
+	"log"
 	"time"
 
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/aws/aws-sdk-go/service/rds"
 )
 
 // func getCPUUtilization takes instance to get CPU Utilization and prints it then returns "Done"
@@ -32,18 +31,7 @@ func getCPUUtilization(instance string) string {
 	},
 	)
 	if err != nil {
-		if aerr, ok := err.(awserr.Error); ok {
-			switch aerr.Code() {
-			case rds.ErrCodeDBInstanceNotFoundFault:
-				fmt.Println(rds.ErrCodeDBInstanceNotFoundFault, aerr.Error())
-			default:
-				fmt.Println(aerr.Error())
-			}
-		} else {
-			// Print the error, cast err to awserr.Error to get the Code and
-			// Message from an error.
-			fmt.Println("Error", err.Error())
-		}
+		log.Fatalf("unable to load SDK config, %v", err)
 	}
 	fmt.Printf("CPUUtilization of %s \n", instance)
 	fmt.Println(result.Datapoints)
