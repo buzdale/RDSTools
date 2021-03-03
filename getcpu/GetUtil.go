@@ -34,7 +34,7 @@ func Utilization(instance string) string {
 		log.Fatalf("unable to load SDK config, %v", err)
 	}
 	fmt.Printf("CPUUtilization of %s \n", instance)
-	fmt.Println(result.Datapoints)
+	fmt.Println(result.Datapoints[0].Average)
 
 	return "done"
 }

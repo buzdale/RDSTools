@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -119,6 +120,7 @@ func describeDB(instance string) *rds.DescribeDBInstancesOutput {
 func listDBs(listFlag bool) []string {
 	result := describeDB("")
 	var list []string
+	var hold string
 	for _, n := range result.DBInstances {
 		if listFlag == true {
 			temp1 := *n.DBInstanceIdentifier
@@ -127,7 +129,8 @@ func listDBs(listFlag bool) []string {
 			list = append(list, temp) //*n.DBInstanceIdentifier)
 		} else {
 			// // Aurora databases don't give FreeStorage  neither do stopped databases - which breaks looking for that metric.
-			if *n.Engine != "aurora" && *n.DBInstanceStatus != "stopped" {
+			hold = *n.Engine
+			if !(strings.Contains(hold, "aurora")) && *n.DBInstanceStatus != "stopped" {
 				list = append(list, *n.DBInstanceIdentifier)
 			}
 		}
