@@ -29,7 +29,7 @@ func main() {
 		holdall = ""
 	}
 	// Print the list of DBs Maybe these should be case statements.
-	if *listflag == true {
+	if *listflag {
 		listOfDBs := listDBs(true)
 		for _, n := range listOfDBs {
 			fmt.Println(n)
@@ -122,7 +122,7 @@ func listDBs(listFlag bool) []string {
 	var list []string
 	var hold string
 	for _, n := range result.DBInstances {
-		if listFlag == true {
+		if listFlag && *n.DBInstanceStatus != "available" {
 			temp1 := *n.DBInstanceIdentifier
 			temp2 := *n.DBInstanceClass
 			temp := temp1 + " " + temp2

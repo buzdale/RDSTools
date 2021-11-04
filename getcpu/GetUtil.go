@@ -14,6 +14,13 @@ import (
 // Utilization takes instance to get CPU Utilization and prints it then returns "Done"
 func Utilization(instance string) string {
 	// statistics needs to be a slice of string - We only need one entry though.
+	type cpuPercentage struct {
+		Average     float64
+		Timestamp   time.Time
+		Unit        string
+		Description string
+	}
+	//var cpuJson []cpuPercentage
 	statistics := []string{
 		"Average",
 	}
@@ -34,7 +41,10 @@ func Utilization(instance string) string {
 		log.Fatalf("unable to load SDK config, %v", err)
 	}
 	fmt.Printf("CPUUtilization of %s \n", instance)
-	fmt.Println(result.Datapoints[0].Average)
-
+	x0 := result.Datapoints[0].Average
+	// fmt.Println((aws.Float64(*x0)))
+	cpuOoutput := (aws.Float64(*x0))
+	// json.Unmarshal([]float64(cpuOoutput), &cpuJson)
+	fmt.Println(cpuOoutput)
 	return "done"
 }
